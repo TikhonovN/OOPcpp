@@ -20,6 +20,9 @@ public:
 	Shape() {
 		++sm_count;
 	}
+	Shape & operator = ( Shape const & shape ) {
+		++sm_count;
+	}
 	virtual ~Shape() {
 		--sm_count;
 	}
